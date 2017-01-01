@@ -1,5 +1,5 @@
 module FlashesHelper
-  flash_class ={ alert: "danger", notice: "success", warning: "warning"}.freeze
+  Flash_Classes = { alert: "danger", notice: "success", warning: "warning"}.freeze
 
   def flash_class(key)
     Flash_Classes.fetch key.to_sym, key
